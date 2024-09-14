@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Momentum</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+</head>
+
+<body class="d-flex h-100 text-bg-dark">
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="mb-auto">
+      <div class="text-center">
+        <div class="temperature">---</div>
+        <p class="location">---</p>
+      </div>
+    </header>
+
+    <main class="mb-5">
+      <div class="text-center mb-4">
+        <div class="time">---</div>
+        <p class="date">---</p>
+      </div>
+      <input class="task-input form-control form-control-lg rounded-0 mb-4" type="text" placeholder="Введите задачу">
+      <div class="task-list list-group mb-4 list-group-flush scrollarea">
+      </div>
+      <div class="text-center"><button class="btn btn-primary delete-completed-tasks-button" type="button">Удалить выполненные задачи</button></div>
+    </main>
+
+    <footer class="mt-auto text-white-50 text-center">
+      <p>momentum</p>
+    </footer>
+  </div>
+  <script src="bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

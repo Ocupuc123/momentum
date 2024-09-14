@@ -1,0 +1,68 @@
+body {
+  position: relative;
+}
+
+body::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  box-shadow: inset 0 0 10rem rgba(0, 0, 0, 1);
+  pointer-events: none;
+}
+
+.cover-container {
+  position: relative;
+  z-index: 2;
+  max-width: 42em;
+  min-height: 100vh;
+}
+
+.cover-bg {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.time {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.date {
+  font-size: 28px;
+}
+
+.location {
+  font-size: 20px;
+}
+
+.temperature {
+  font-size: 40px;
+}
+
+.scrollarea {
+  overflow-y: auto;
+  max-height: 300px;
+}
+
+.completed span {
+  text-decoration: line-through;
+}
+
+@media (max-width: 767px) {
+  .time {
+    font-size: 50px;
+  }
+  .date {
+    font-size: 20px;
+  }
+}
